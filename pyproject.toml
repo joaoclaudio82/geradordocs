@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "porjai"
+version = "0.5.0"
+description = ""
+authors = []
+packages = [{include = "projai"}]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+openai = "^1.12.0"
+tiktoken = "^0.6.0"
+python-dotenv = "^1.0.1"
+python-docx = "^1.1.0"
+tomlkit = "^0.12.4"
+aigents = {git = "https://github.com/bessavagner/aigents.git", rev = "0.2.1-patch-1"}
+
+
+[tool.poetry.group.dev.dependencies]
+ipython = "^8.21.0"
+ipykernel = "^6.29.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
